@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+/*img {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 35%;*/
+/*  width: 320px;*/
+/*  height: 240px;*/
+/*  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);*/
+/*  padding: 10px;*/
+/*  border-radius: 5px;*/
+/*  background: rgba(240,230,220, .7);*/
+/*  box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+/*}*/
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  font-family: 'Jeju Myeongjo', serif;
+  text-align: center;
+  color: white;
+  width: 50%;
+  padding: 3%;
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+
+#slide0 {
+  background-image: url("http://blogfiles.naver.net/MjAxNzAzMzBfMjE2/MDAxNDkwODU2Njg4MzA0.nkawVYd23zpW8TrEvSyVigo-fIib5keUBvgVH5xathEg.2fb7-b7YbffZea3RUPQhJTkVajh-SV08ycuPCHNlHFog.JPEG.jahnne/DSC05434.jpg");
+   background-attachment: fixed;  
+}
+      
+      #title-box {
+        width: 200px;
+        border: 3px solid #fff;
+        padding: 30px;
+        text-align: center;
+        line-height: 60px;
+      }
+
+#slide1:before {
+  /*background-image: url("http://blogfiles.naver.net/MjAxNzAzMzBfMjcy/MDAxNDkwODQwMTM0NTI4.cQqrZ5V0_GYJ4bN23Ky4Z3nzZnsPtw9_Zn1EW7Jw0BAg.DFCTbqMWznbMUnJ3mH5Bm1wWpkPTGQqlNANETxBHwBsg.JPEG.jahnne/DSC04628.jpg");*/
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide1 {
+
+  background-image: url("http://blogfiles.naver.net/MjAxNzAzMzBfMTg5/MDAxNDkwODcyOTU1NDEx.9vVFaXThcYJh6GmLB_OLnvdufiVhgYQGlpGH4QWFAoMg.NOKEL8JJLtPfUr-RWo_TMe01eV4yOH-juwBJw9NIEJcg.JPEG.jahnne/DSC05956.jpg");
+  
+}
+        #opacity-box {
+          /*width: 700px;*/
+          /*border-width: 700px;*/
+          background-color: black;
+        }
+        
+        #hello {
+          font-style: bold;
+          margin-top: 150px;
+          letter-spacing: 0.6em;
+          width: 600px;
+          border: none;
+          float: right;
+          font-family: 'Jeju Myeongjo', serif;
+          color: white;
+          text-align: right;
+          line-height: 60px;
+        }
+        
+        #hello-2 {
+          width: 300px;
+          height: auto;
+          padding: 30px;
+          border: 1px solid black;
+          font-family: 'Jeju Myeongjo', serif;
+          font-size: 20px;
+          opacity: 0.2;
+          color: black;
+          line-height: 30px;
+          text-align: left;
+        }
+
+#slide2 {
+  background-image: url("http://blogfiles.naver.net/MjAxNzAzMzBfMTY2/MDAxNDkwODczNjEyMDYz.HvlyaFtHWpa4obBA31O470jcxgSQXShClXUtkaomS-Ug.GSqOlp7sOlwxdYBZhwI5ALzdjW92ZLK2bHpK6zNWFO0g.JPEG.jahnne/DSC04628-blur.jpg");
+  background-attachment: relative;
+  font-family: 'Jeju Myeongjo', serif;
+  font-size: 15px;
+}
+
+#slide3:before {
+  /*background-image: url("http://lorempixel.com/640/480/abstract/5/");*/
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
